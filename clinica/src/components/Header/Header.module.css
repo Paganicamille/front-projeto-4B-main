@@ -88,7 +88,7 @@
   }
   
   .ul {
-    /* list-style: none; */
+ 
     padding: 0;
     margin: 0;
     color: rgb(0, 0, 0);
@@ -96,7 +96,7 @@
   
   .li {
     margin: 1rem 0;
-    /* position: relative; */
+  
   }
 
   .liDesktop{
@@ -204,7 +204,6 @@
 
 
 
-/* submenu do desktop*/
 
 .liDesktop:hover .ulSmenuDesktop {
   max-height: 100vh;

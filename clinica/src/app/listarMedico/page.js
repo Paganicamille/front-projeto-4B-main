@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import styles from "./listarMedico.module.css";
-// import Image from "next/image";
+
 
 export default function medico() {
     let [nome, setNome] = useState(undefined)
