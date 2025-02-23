@@ -16,7 +16,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <Image className={styles.img} src='/images/relatorio.png' alt='' width={100} height={80} />
-        <h1 className={styles.h1}>Clínica Barkauskas</h1>
+        <h1 className={styles.h1}></h1>
        
       </div>
       <button
