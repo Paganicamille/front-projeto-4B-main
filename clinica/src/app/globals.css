@@ -2,7 +2,7 @@
 
 :root {
   --backmenu: #ffffff;
-  --backgroundnav: #039c03e5;
+  --backgroundnav: #003400;
 }
 
 @media (prefers-color-scheme: dark) {

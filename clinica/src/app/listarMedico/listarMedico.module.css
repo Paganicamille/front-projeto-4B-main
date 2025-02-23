@@ -1,5 +1,5 @@
 .buttonMedic {
-    background-color:  #039c03e5;
+    background-color:  #003400;
     color: rgb(0, 0, 0);
     border-top: solid 5px rgb(0, 0, 0);
     border-left: solid 5px rgb(0, 0, 0);
@@ -12,7 +12,7 @@
 }
 
 .buttonMedic:hover{
-    background-color:#039c03e5;
+    background-color:#003400;
     color: #009929;
     border: none;
     border-top: solid 5px rgb(255, 255, 255);
@@ -34,7 +34,7 @@
 
 .th {
     display: table-cell;
-    background-color: #039c03e5 ;
+    background-color: #003400 ;
     vertical-align: inherit;
     font-weight: bold;
     unicode-bidi: isolate;
