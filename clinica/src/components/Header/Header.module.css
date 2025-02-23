@@ -1,0 +1,237 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--backgroundnav);
+    color: var(--text-color);
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+
+  .h1{
+    border: none;
+    letter-spacing: 5px;
+    padding-left: 20px;
+  }
+
+  .img{
+    color: white;
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 0.25rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+
+  .menuButton.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menuButton.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menuButton.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  
+  .nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 8%;
+    height: 100vh;
+    background-color: var(--backmenu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: right 0.3s ease;
+    padding-top: 80px;
+  }
+
+
+  
+  
+  .navOpen {
+    right: 0;
+  }
+  
+  .ul {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+  }
+  
+  .li {
+    margin: 1rem 0;
+    /* position: relative; */
+  }
+
+  .liDesktop{
+    position: relative;
+  }
+  
+  .link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .link:hover {
+    color: var(--hover-color);
+  }
+
+  .tela-mobile{
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 780px) {
+  .nav{
+    width: 28%;
+  }
+  }
+
+  @media (max-width: 600px){
+    .nav{
+      display: flex;
+    }
+    .navDesktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: 601px){
+    .menuButton{
+      display: none;
+    }
+    .navDesktop {
+      width: 100%;
+      height: 60px;
+      background-color: var(--backgroundnav);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ulDesktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      padding: 0;
+      margin: 0;
+      margin-top: 20px;
+      color: rgb(0, 0, 0);
+      list-style: none;
+    }
+
+    .liDesktop:hover{
+      border-bottom: 2px rgb(36, 30, 30) solid;
+      border-radius: 2px;
+    }
+
+    .navDesktop {
+      display: block;
+    }
+    .nav {
+      display: none;
+    }
+    
+  }
+
+.li:hover .ulSmenu {
+    max-height: 100vh;
+}
+
+ .ulSmenu{
+  position: absolute;
+  left: 0px;
+  width: max-content;
+  max-height: 0;
+  background-color:#000000;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: 1s;
+ }
+
+ .ulSmenu a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+.ulSmenu a:hover {
+  color:#000000
+}
+
+.linkSmenu {
+  font-size: 16px;
+  margin: 10px;
+}
+
+
+
+/* submenu do desktop*/
+
+.liDesktop:hover .ulSmenuDesktop {
+  max-height: 100vh;
+}
+
+.ulSmenuDesktop{
+position: absolute;
+left: 0px;
+width: max-content;
+max-height: 0;
+background-color:  #003400;
+overflow: hidden;
+border-radius: 5px;
+transition: 1s;
+}
+
+.ulSmenuDesktop a {
+display: block;
+color: #000000;
+text-decoration: none;
+}
+
+.ulSmenuDesktop a:hover {
+color:#ffffff
+}
+
+.linkSmenuDesktop {
+font-size: 16px;
+margin: 10px;
+}

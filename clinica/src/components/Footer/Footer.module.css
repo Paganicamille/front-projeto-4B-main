@@ -1,0 +1,9 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundnav) ;
+}
+
+.h1{
+    border: none;
+}

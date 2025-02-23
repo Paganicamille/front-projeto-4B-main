@@ -1,0 +1,39 @@
+.imgPage{
+  border-radius: 10px;
+  border: solid 2px rgb(0, 0, 0);
+  max-width: 100%;
+}
+
+.divFotos{
+  align-items: center;
+  display: flex;
+  border: solid rgb(0, 0, 0);
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+.text{
+  font-size: 1.2rem;
+  color: #000000;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.containerPrincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+.containerPrincipal>p {
+  text-align: center;
+}
